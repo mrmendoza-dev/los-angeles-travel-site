@@ -21,7 +21,7 @@ DARK BLUE: #1D3557
     --fw-reg: 300;
     --fw-bold: 900;
 
-    --clr-light: #fcf2ff;
+    --clr-light: #ffffffe0;
     --clr-dark: #232346;
     --clr-accent: #180E21;
 
@@ -36,7 +36,7 @@ DARK BLUE: #1D3557
 
 html {
     scroll-behavior: smooth;
-    background-color: black;
+    background-color: #000;
 
 }
 
@@ -46,13 +46,15 @@ body {
     color: var(--clr-light);
 
     text-align: center;
-    background-image: url("images/hero.jpg");
+    background-image: url("images/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
-    background-color: black;
+    background-color: #000;
     max-width: 2000px;
     margin: 0 auto;
+    /* border: 1px solid #00ff00; */
+
 
 }
 
@@ -97,6 +99,9 @@ a {
     margin-bottom: 0.25em;
     font-size: var(--fs-h1);
 
+    color: #fff;
+    text-shadow: 0 0 5px rgba(255, 0, 255, 0.745);
+
 }
 .hero__subtitle {
     font-size: 1.4rem;
@@ -129,6 +134,8 @@ a {
     object-fit: cover;
     margin-bottom: 1.5em;
     max-height: 250px;
+        transition: transform 500ms linear;
+
 }
 
 .activity__name {
@@ -177,7 +184,10 @@ a {
     opacity: 0.5;
 }
 
-
+.activity__img:hover,
+.activity__img:focus  {
+    transform: scale(1.1);
+}
 
 
 
